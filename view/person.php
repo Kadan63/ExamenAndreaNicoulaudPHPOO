@@ -1,4 +1,6 @@
 <?php include('controller/person.php');?>
+<?php include('controller/client.php');?>
+<?php include('controller/employee.php');?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,5 +28,8 @@
         <P><?php echo $Person3->getAge();?></P>
         </li>
     </ul>
+
+    <h1>Nom de l'entreprise :</h1><br><p><?php echo $client1->getEntrepriseName();?></p>
+    <h1>Salaire de l'employé :</h1><br><p><?php echo $employee1->getSalary();?></p>
 </body>
 </html>
